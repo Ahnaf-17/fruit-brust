@@ -45,9 +45,9 @@
 
 <body >
     <header class="lg:mx-20">
-        <nav>
+        <nav class="mx-auto">
             <div class="navbar bg-base-100 lg:bg-[#F85559] lg:rounded-full h-28 mt-12">
-                <div class="navbar-start">
+                <div class="navbar-start hidden lg:flex">
                     <!-- navbar-start -->
                     <div class="hidden lg:flex text-white font-medium">
                         <ul class="menu menu-horizontal px-1 ml-7 gap-7">
@@ -60,15 +60,15 @@
 
 
                 </div>
-                <div class="lg:text-white text-black items-start pr-10 ">
-                    <img class="w-12 h-15" src="images/logo.png" alt="">
+                <div class="lg:text-white text-black flex items-center  justify-start lg:justify-center">
+                    <img class="w-12 h-15" src="./images/logo.png" alt="">
                     <!-- <h3 class="text-4xl">Fruit Burst</h3> -->
                     <!-- <p>Fruit Burst</p> -->
                     <p class="btn btn-ghost normal-case text-xl lg:text-4xl">Fruit Brust</p>
 
                 </div>
 
-                <div class="navbar-end hidden lg:flex">
+                <div class="navbar-end hidden lg:flex lg:relative">
 
                     <input type="text" placeholder="Search here"
                         class="input input-bordered w-24 md:w-auto lg:w-96 h-14 rounded-full mr-12" />
@@ -81,8 +81,8 @@
                     </div>
                 </div>
 
-                <div class="dropdown lg:hidden items-end">
-                    <!-- :flex-none  -->
+                <!-- <div class="dropdown lg:hidden items-end">
+                    :flex-none 
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
                             <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#121212" stroke-width="1.5"
@@ -98,7 +98,26 @@
                         <li><input type="text" placeholder="Search here"
                                 class="input input-bordered w-24 md:w-auto lg:w-96 h-14 rounded-full mr-12" /></li>
                     </ul>
+                </div> -->
+                <div class="dropdown absolute right-1 lg:relative">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                            fill="none">
+                            <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="absolute right-5 lg:relative menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-lato">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <li><input type="text" placeholder="Search"
+                            class="input input-bordered w-[110px] md:w-[110px]" /></li>
+                    </ul>
                 </div>
+            </div>
             </div>
         </nav>
 
@@ -174,7 +193,33 @@
                     </div>
                 </div>
             </div>
+
+            <div class="hidden bg-white drop-shadow-lg lg:flex justify-center rounded-lg mx-auto w-[1196px] h-[200px] -top-28 relative">
+                <div class="flex flex-row justify-center  items-center gap-16">
+                    <div>
+                        <img src="./images/fruit1.png" alt="">
+                        <p class="text-center mt-2">Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit2.png" alt="">
+                        <p class="text-center mt-2">Orange</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit3.png" alt="">
+                        <p class="text-center mt-2">Apple</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit4.png" alt="">
+                        <p class="text-center mt-2">Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit5.png" alt="">
+                        <p class="text-center mt-2">Anar</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        
 
     </header>
 
